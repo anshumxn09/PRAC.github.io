@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #e1d7de;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .center_container {
+    width: 75vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2),
+      0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+  }
+  .image {
+    width: 50%;
+    border-radius: 20px;
+  }
+  .image > img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .form_container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .form_container > h1{
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  .form_container > form > label {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bolder;
+  }
+  .form_container > form > input[type="email"],
+  input[type="password"] {
+    outline: none;
+    height: 30px;
+    color: black;
+    font-size: 18px;
+    margin: 7px 0px;
+  }
+
+  .form_container > form > input[type="submit"] {
+    width: 100%;
+    background-color: #e1d7de;
+    outline: unset;
+    border: unset;
+    height: 30px;
+    border-radius: 20px;
+    margin: 13px 0px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+
+@media screen and (max-width:715px) {
+    .center_container{
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        border-radius: unset;
+    }
+    .image{
+        width: 100%;
+    }
+    .image > img{
+        border-radius: unset;
+    }
+    .form_container{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
